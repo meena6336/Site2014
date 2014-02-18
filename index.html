@@ -9,15 +9,45 @@
 
 <!--this is the stuff the user will see-->
 <body>
-<h1>My Home Page</h1>  
-<p>Welcome!</p>
-<br>
-<h2>Links</h2>
-<a href="portfolio.html" title="See my portfolio">My Portfolio</a>
-<br>
-<a href="resume.html" title="See my resume">My Resume</a>
-<br>
-<a href="contact.html" title="Contact me">Contact Me</a>
+   <div id="wrapper">
+     <header> 
+         <h1>My Home Page</h1> 
+     </header>
+     
+     <div id="content">
+         <!--3 columns: nav, article, aside-->
+         <nav>
+             <ul>
+                 <li><a href="portfolio.html" title="See my portfolio">My Portfolio</a></li>
+                 <li><a href="resume.html" title="See my resume">My Resume</a></li>
+                 <li><a href="contact.html" title="Contact me">Contact Me</a></li>
+             </ul>
+         </nav>
+         
+         <article>
+             <header class="article-head">
+                 <h1>About Me</h1>
+             </header>
+             <section>
+                 <p>Welcome! Take a look at my work.</p>
+             </section>
+         </article>
+         
+         <aside>
+             <ul>
+                 <li>ad 1</li>
+                 <li>ad 2</li>
+                 <li>ad 3</li>
+             </ul>
+         </aside>
+     </div>
+     
+     <footer id="page-footer"> 
+         <a href="portfolio.html" title="See my portfolio">My Portfolio</a>
+         <a href="resume.html" title="See my resume">My Resume</a>
+         <a href="contact.html" title="Contact me">Contact Me</a>           
+     </footer>
+  </div>
 </body>
   
 </html>
