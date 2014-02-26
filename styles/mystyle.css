@@ -4,14 +4,14 @@
     font-family: Verdana, Helvetica, sans-serif;    
 }
 #wrapper {
-    width: 500px;
+    width: 100%;
     /* center layout element:top,right, bottom, left*/
     margin: 10px auto 10px auto;
     height: 500px;
     background:#dddddd;
 }
 header {
-    width: 100%;
+    width: 90%;
     height: 50px;
     background:#bbbbbb;
     text-align: center;
@@ -21,13 +21,16 @@ header {
 }
 nav, aside {
     background:#bbbbbb;
-    width: 100px;
+    width: 25%;
     float: left;
 }
 article {
     /*border: 1px solid #000000;*/
     background: #ffffff;
-    width: 300px;
+    width: 50%;
     float: left;
 }
-#page-footer {clear:left; background:#bbbbbb;
+#page-footer {
+    clear:left; 
+    background:#bbbbbb;
+}
