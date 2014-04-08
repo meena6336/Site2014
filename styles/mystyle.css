@@ -2,33 +2,33 @@
 
 * {
     font-family: Verdana, Helvetica, sans-serif; 
-    color: #42434c;
+    color: #3f403f;
     
 }
 
-.container {
+body {
 
-    background:#d7daf7;
+    background:f3f5f3;
 }
 header {
 
-    background:#858799;
+    background:#c5c7c6;
     text-align: center;
 }
 .article-head {
-    background: #858799;
+    background: #c5c7c6;
 }
 li {
-    background:#858799;
+    background:#c5c7c6;
 }
-article {
-    border: 1px solid #000000;
+section {
+    background:#c5c7c6;
 
 }
 #page-footer {
   
-    background:#858799;
-    border-top:1px solid #888888;
+    background:#c5c7c6;
+    border-top:1px solid #6a6b6b;
 }
 
 a {
@@ -36,11 +36,11 @@ a {
 }
 
 a:link {
-    background: #7a7c8c;
+    background: #c5c7c6;
 }
 
 a:visited {
-    background: #7a7c8c;
+    background: #a2a3a2;
 }
 
 a:hover, a:active {
