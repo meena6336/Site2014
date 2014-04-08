@@ -1,7 +1,5 @@
 /* this is my style sheet */
 
-/*
-
 * {
     font-family: Verdana, Helvetica, sans-serif; 
     margin: 0; padding: 0; 
@@ -9,15 +7,11 @@
 }
 
 #wrapper {
-    width: 960px;
-    /* center layout element:top,right, bottom, left*/
-    margin: 10px auto 10px auto;
-    height: 900px;
+
     background:#ddddee;
 }
 header {
-    width: 90%;
-    height: 50px;
+
     background:#bbbbbb;
     text-align: center;
 }
@@ -30,13 +24,11 @@ nav, aside {
     float: left;
 }
 article {
-    /*border: 1px solid #000000;*/
-    background: #ffffff;
-    width: 50%;
-    float: left;
+    border: 1px solid #000000;
+
 }
 #page-footer {
-    clear:left; 
+  
     background:#bbbbbb;
 }
 
@@ -56,4 +48,3 @@ a:hover, a:active {
     background: #cddedc;
 }
 
-*/
