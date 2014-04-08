@@ -15,24 +15,24 @@ header {
     background:#c5c7c6;
     text-align: center;
 }
-.article-head {
-    background: #c5c7c6;
-}
+
 li {
     background:#c5c7c6;
 }
+
 section {
     background:#c5c7c6;
 
 }
-#page-footer {
-  
+
+footer {
     background:#c5c7c6;
     border-top:1px solid #6a6b6b;
 }
 
 a {
     display:block;
+    height: 3em;
 }
 
 a:link {
