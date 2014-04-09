@@ -43,7 +43,11 @@ a:visited {
     background: #a2a3a2;
 }
 
-a:hover, a:active {
+a:hover {
     background: #d98838;
+}
+
+a:active {
+    background: #ff0000;
 }
 
