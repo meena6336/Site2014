@@ -44,9 +44,9 @@ a:hover {
 }
 
 a:active {
-    background: #ff0000;
+    background: #00ff00;
 }
 
 .current-page {
-    color: #d98838;
+    color: #0000ff;
 }
