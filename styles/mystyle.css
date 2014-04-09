@@ -51,3 +51,6 @@ a:active {
     background: #ff0000;
 }
 
+.current-page {
+    background: #00ff00;
+}
