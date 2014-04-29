@@ -10,7 +10,12 @@
 
 <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
 
+<!--blueimp image gallery -->
+<link rel="stylesheet" href="http://www.tcnj.edu/~selvanm1/css/blueimp-gallery.min.css">
+
+<!--
 <link rel="stylesheet" href="./styles/mystyle.css">
+-->
 
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -35,7 +40,38 @@
              <li class=" col-xs-2"><a href="contact.html" title="Contact me">Contact</a></li>
            </ul>
 	 </nav>
-     </div><!--end row about me anf welcome para-->    
+     </div><!--end row about me anf welcome para-->  
+     
+     
+                
+           <!-- The Gallery as inline carousel, can be positioned anywhere on the page -->
+	<div id="blueimp-gallery-carousel" class="blueimp-gallery blueimp-gallery-carousel">
+	 	<div class="slides"></div>
+    		<h3 class="title"></h3>
+    		<a class="prev">‹</a>
+    		<a class="next">›</a>
+    		<a class="play-pause"></a>
+    		<ol class="indicator"></ol>
+	</div>
+	
+	 <div id="links">
+
+		   <!--link to google drive url-->
+		    <a href="https://drive.google.com/uc?id=0B8hLx0OAAlcSQ05hUXlreGctd2M" title="Type Poster">
+		        <!--link to image thumbnail-->
+		        <img src="https://drive.google.com/uc?id=0B8hLx0OAAlcSQ05hUXlreGctd2M" alt="palatino type poster" width="100px" height="100px">
+		    </a>
+		    <a href="https://drive.google.com/uc?id=0B8hLx0OAAlcSTGFJYldsMVdiYW8" title="Cheers!">
+		        <img src="https://drive.google.com/uc?id=0B8hLx0OAAlcSTGFJYldsMVdiYW8" alt="new years card" width="100px" height="100px">
+		    </a>
+		    <a href="https://drive.google.com/uc?id=0B8hLx0OAAlcSamFMcTZRUWNXMVU" title="Happy Holidays!">
+		        <img src="https://drive.google.com/uc?id=0B8hLx0OAAlcSamFMcTZRUWNXMVU" alt="seasons greetings card" width="100px" height="100px">
+		    </a>
+	    
+	</div>
+	
+     
+     
          <article>
            <div class="row">
              <header>
@@ -53,6 +89,8 @@
              </section>
     	   </div> <!--end div image banner-->
          </article>
+         
+         
      
      <footer id="page-footer" class="row"> 
          <p>meena6336@gmail.com</p>        
@@ -63,6 +101,35 @@
 
 <!-- Latest compiled and minified JavaScript -->
 <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+
+
+<script src="http://www.tcnj.edu/~selvanm1/js/blueimp-gallery.min.js"></script>
+
+<!--
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="http://www.tcnj.edu/~selvanm1/js/jquery.blueimp-gallery.min.js"></script>
+-->
+
+<script>
+document.getElementById('links').onclick = function (event) {
+    event = event || window.event;
+    var target = event.target || event.srcElement,
+        link = target.src ? target.parentNode : target,
+        options = {index: link, event: event},
+        links = this.getElementsByTagName('a');
+    blueimp.Gallery(links, options);
+};
+</script>
+
+<script>
+blueimp.Gallery(
+    document.getElementById('links').getElementsByTagName('a'),
+    {
+        container: '#blueimp-gallery-carousel',
+        carousel: true
+    }
+);
+</script>
 
 </body>
   
