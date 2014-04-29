@@ -9,8 +9,11 @@
 
 <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
 
-<!--blueimp image gallery -->
-<link rel="stylesheet" href="http://www.tcnj.edu/~selvanm1/css/blueimp-gallery.min.css">
+<!--blueimp image gallery 
+<link rel="stylesheet" href="http://www.tcnj.edu/~selvanm1/css/blueimp-gallery.min.css">-->
+
+<!--blueimp jqueary plug-in --> 
+<link rel="stylesheet" href="http://www.tcnj.edu/~selvanm1/blueimp-gallery.jquery.json">
 
 <!--<link rel="stylesheet" href="./styles/mystyle.css"> -->
 
@@ -61,16 +64,16 @@
 	  
              <section>
 		 <h3>Typography</h3>
-		 <div class="row">
+		 <div id="type" class="row">
 		   <!--link to google drive url-->
-		    <a href="https://drive.google.com/uc?id=0B8hLx0OAAlcSQ05hUXlreGctd2M" title="Type Poster">
+		    <a href="https://drive.google.com/uc?id=0B8hLx0OAAlcSQ05hUXlreGctd2M" title="Type Poster" data-gallery="#bluimp-gallery-type">
 		        <!--link to image thumbnail-->
 		        <img src="https://drive.google.com/uc?id=0B8hLx0OAAlcSQ05hUXlreGctd2M" alt="palatino type poster" width="100px" height="100px">
 		    </a>
-		    <a href="https://drive.google.com/uc?id=0B8hLx0OAAlcSTGFJYldsMVdiYW8" title="Cheers!">
+		    <a href="https://drive.google.com/uc?id=0B8hLx0OAAlcSTGFJYldsMVdiYW8" title="Cheers!" data-gallery>
 		        <img src="https://drive.google.com/uc?id=0B8hLx0OAAlcSTGFJYldsMVdiYW8" alt="new years card" width="100px" height="100px">
 		    </a>
-		    <a href="https://drive.google.com/uc?id=0B8hLx0OAAlcSamFMcTZRUWNXMVU" title="Happy Holidays!">
+		    <a href="https://drive.google.com/uc?id=0B8hLx0OAAlcSamFMcTZRUWNXMVU" title="Happy Holidays!" data-gallery>
 		        <img src="https://drive.google.com/uc?id=0B8hLx0OAAlcSamFMcTZRUWNXMVU" alt="seasons greetings card" width="100px" height="100px">
 		    </a>
 		 </div>
@@ -127,7 +130,11 @@
 <!-- Latest compiled and minified JavaScript -->
 <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
 
+
 <script src="http://www.tcnj.edu/~selvanm1/js/blueimp-gallery.min.js"></script>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="js/jquery.blueimp-gallery.min.js"></script>
 
 <script>
 document.getElementById('links').onclick = function (event) {
