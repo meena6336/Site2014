@@ -48,6 +48,37 @@
              </header>
            </div> <!--end row header-->
            
+           <!-- The Gallery as inline carousel, can be positioned anywhere on the page -->
+	<div id="blueimp-gallery-carousel" class="blueimp-gallery blueimp-gallery-carousel">
+	 	<div class="slides"></div>
+    		<h3 class="title"></h3>
+    		<a class="prev">‹</a>
+    		<a class="next">›</a>
+    		<a class="play-pause"></a>
+    		<ol class="indicator"></ol>
+	</div>
+	
+	 <div id="links">
+
+		   <!--link to google drive url-->
+		    <a href="https://drive.google.com/uc?id=0B8hLx0OAAlcSQ05hUXlreGctd2M" title="Type Poster">
+		        <!--link to image thumbnail-->
+		        <img src="https://drive.google.com/uc?id=0B8hLx0OAAlcSQ05hUXlreGctd2M" alt="palatino type poster" width="100px" height="100px">
+		    </a>
+		    <a href="https://drive.google.com/uc?id=0B8hLx0OAAlcSTGFJYldsMVdiYW8" title="Cheers!">
+		        <img src="https://drive.google.com/uc?id=0B8hLx0OAAlcSTGFJYldsMVdiYW8" alt="new years card" width="100px" height="100px">
+		    </a>
+		    <a href="https://drive.google.com/uc?id=0B8hLx0OAAlcSamFMcTZRUWNXMVU" title="Happy Holidays!">
+		        <img src="https://drive.google.com/uc?id=0B8hLx0OAAlcSamFMcTZRUWNXMVU" alt="seasons greetings card" width="100px" height="100px">
+		    </a>
+	    
+	</div>
+	
+	
+	
+	
+	
+           
            <div> <!--blueimp image gallery test-->
            <!-- The Gallery as lightbox dialog, should be a child element of the document body -->
 		  <div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls">
@@ -144,6 +175,16 @@ document.getElementById('links').onclick = function (event) {
         links = this.getElementsByTagName('a');
     blueimp.Gallery(links, options);
 };
+</script>
+
+<script>
+blueimp.Gallery(
+    document.getElementById('links').getElementsByTagName('a'),
+    {
+        container: '#blueimp-gallery-carousel',
+        carousel: true
+    }
+);
 </script>
 
 </body>
