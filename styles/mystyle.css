@@ -2,4 +2,6 @@ a:active {
     background: #d98838;
 }
 
-body { padding-top: 70px; }
+.active {
+    background: #d98838;   
+}
